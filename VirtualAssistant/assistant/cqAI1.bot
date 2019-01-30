@@ -1,0 +1,85 @@
+{
+    "name": "cqAI1",
+    "description": "",
+    "services": [
+        {
+            "type": "luis",
+            "name": "cqAI1_General",
+            "appId": "484c8fe1-2b20-4887-81c2-6665f8f93423",
+            "authoringKey": "ed/0Ii2QQDg46ioUF9gngQ==!dC4RgfkgPx3fpDZxxb9ihkDP2O5d73ryZpCw9rqQa34XW41YF8wNu6f38FCtVQpi",
+            "subscriptionKey": "Inza/1wWTTBJxcGswQwSQA==!ZDf3in1INqJ5UEegzmj9MXLgFpZa/Z8VLHIkahqLn6a7ba1SBQTlN24NJzd82WOq",
+            "version": "0.1",
+            "region": "westus",
+            "id": "general"
+        },
+        {
+            "type": "luis",
+            "name": "cqAI1_Calendar",
+            "appId": "129c04b1-656d-4bb2-99bf-9a4ba000e25b",
+            "authoringKey": "OgCFRAu+yuDCSiKgOkiiWg==!ChUJYh9/huQFbYvGK60Jr/NgtQH7p0PaEd+cO0DewiZFat1EOzrZFw6pBkBVdxbr",
+            "subscriptionKey": "gmQ4Wv6V0y2tle+VuHKICw==!u9ktCoM/ZVFXBDtGsEcFst/It0Yb6FKX/Owybd4YAM7H3lFVP3p4zEE9k7MFAPaT",
+            "version": "0.1",
+            "region": "westus",
+            "id": "calendar"
+        },
+        {
+            "type": "luis",
+            "name": "cqAI1_Email",
+            "appId": "39934732-5cb6-4d25-8349-57d2f194ab3f",
+            "authoringKey": "fAk/7XIXBSV4thVD+auxLA==!i5mLtSJSYoxM5UA+DXCASks5cbEiJGNkqC6uRR/SDgbUBy5lgiIP0rnPXYkL/bVZ",
+            "subscriptionKey": "IPo7lmzBFDCsaXzLaLmuig==!itc0sA54nQDyhgl13G7bZ0lXIO0xrzcv+yJSmGTEVwTHKa1K78WR5iTg7Ke0j7HB",
+            "version": "0.1",
+            "region": "westus",
+            "id": "email"
+        },
+        {
+            "type": "luis",
+            "name": "cqAI1_ToDo",
+            "appId": "9da75ef9-4115-4436-b43b-89a28d93d0f7",
+            "authoringKey": "sSIu3tspuobEEUNSGlhOiQ==!ACWP0AWqoxFM/mHY9kOgRBNtZ6ovHBnNeVaQIfg+yFqvPsYvEuT7F/ynijax7w2f",
+            "subscriptionKey": "A0aglmcOiiyB3Ez0cMd9Gg==!fII/xhVsH2KeWxF/dnT8dNvW1tD6yHiP9/p0Pp9UfRdAv0KrCYJ6M+bvWHLEExEW",
+            "version": "0.1",
+            "region": "westus",
+            "id": "todo"
+        },
+        {
+            "type": "luis",
+            "name": "cqAI1_PointOfInterest",
+            "appId": "7c816fff-c087-46be-9224-e24c44a77793",
+            "authoringKey": "gdL8d4qiUaeKmTVbBZdhzw==!CnPC0c/1AqPtKx94l9CgWRCRv/0UxFRpaOYT2M2OYsJzTsZjU/nAFd3EkzrUGOOO",
+            "subscriptionKey": "58aghl3hKy7FveCzqRBT/Q==!wAxNiU9GTQzBg6xemWwnKua1IiMn6Cimf7KVOboRuq5WovOloHGroulGeixGZAgR",
+            "version": "0.1",
+            "region": "westus",
+            "id": "pointofinterest"
+        },
+        {
+            "type": "qna",
+            "name": "FAQ",
+            "id": "faq",
+            "kbId": "af215e5d-a019-4bf5-a70c-ca7b57e0c9e8",
+            "subscriptionKey": "1IIU9lMt6kB5uKygMPL0hg==!HT/5qQQf1r/fktTKssH2hJ7WG42ZaJ8ZnXe66+N6uKTdm7L0rJSPoksJQA76syGy",
+            "endpointKey": "Bi6T6JB/U5cpKxYDY4GOOw==!//tSNoCX5WXc4+kneIBIAvW0Y/rdzYH1a9w+IKbqJ31Jvi5AzKhnCCdFae0iJVbS",
+            "hostname": "https://cqai1-qnahost.azurewebsites.net/qnamaker"
+        },
+        {
+            "type": "dispatch",
+            "serviceIds": [
+                "general",
+                "calendar",
+                "email",
+                "todo",
+                "pointofinterest",
+                "faq"
+            ],
+            "name": "cqAI1_Dispatch",
+            "appId": "3d125ed3-a8d2-4164-be61-90dcc29e3acb",
+            "authoringKey": "Z3scADNM4avKXTLQQPcIaA==!ISn8bJBWq8b2eeE/CHhiDaDT25nRKuglFr64ngAS0DnGc4ODr6Nx0uu7RAOZyced",
+            "subscriptionKey": "AMXzRppFXX/mveWxiT1AvQ==!Tl/O1nM5145uzQVxrQQ5kRUtdtFK3ecynGaTej7jNeuGbfqyYlgErNnSVpJVBfiX",
+            "version": "0.1",
+            "region": "westus",
+            "id": "dispatch"
+        }
+    ],
+    "padlock": "rYCyOQr9YyXxemxwLE7P0g==!br97vqxfD9pRuuUqgbovjsWC7e1gMAl7rJGGIgVc/Go1bCM042ZgKQtJsKIHC70Y",
+    "version": "2.0"
+}
